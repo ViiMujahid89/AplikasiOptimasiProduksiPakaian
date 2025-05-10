@@ -65,13 +65,11 @@ optimasi-pakaian/
 ├── data/
 │   ├── kain.json             # Dataset parameter kain
 │   └── jenispakaian.json     # Daftar jenis produk
-├── docs/
 ├── logic.py                  # Logika optimasi Greedy + sisa kain
 ├── ui.py                     # Antarmuka Streamlit
 ├── main.py                   # Entry point aplikasi
 ├── requirements.txt
 ├── README.md
-└── LICENSE
 ```
 
 ---
