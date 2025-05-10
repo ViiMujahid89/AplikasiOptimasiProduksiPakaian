@@ -1,6 +1,6 @@
 # 🧶 Aplikasi Optimasi Produksi Pakaian (Streamlit)
 
-**Oleh: Nourivex**
+**Oleh: ViiMujahid98**
 
 > Aplikasi berbasis web interaktif menggunakan **Streamlit** untuk menghitung distribusi produksi pakaian optimal berdasarkan ketersediaan kain. Dilengkapi rekomendasi kain, fokus ukuran, persentase alokasi, dan optimasi sisa kain.
 
@@ -81,7 +81,7 @@ optimasi-pakaian/
 1. **Clone repository**
 
    ```bash
-   git clone https://github.com/LycusCoder/optimasi-pakaian.git
+   git clone https://github.com/ViiMujahid89/AplikasiOptimasiProduksiPakaian.git
    cd optimasi-pakaian
    ```
 
