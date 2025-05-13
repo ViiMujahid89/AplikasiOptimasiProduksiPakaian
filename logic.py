@@ -6,7 +6,7 @@ def hitung_penggunaan_kain(panjang_m, lebar_m, jenis_kain, dataset,
     """
     Hitung produksi optimal berdasarkan luas kain (panjang x lebar)
     """
-    # Ambil parameter kain
+    
     data_kain = dataset[jenis_kain]
     meter_per_ukuran = data_kain["meter_per_ukuran"]
     keuntungan_per_pakaian = data_kain["keuntungan_per_pakaian"]

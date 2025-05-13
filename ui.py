@@ -4,12 +4,10 @@ import streamlit as st
 import pandas as pd
 from logic import hitung_penggunaan_kain, rekomendasi_kain
 
-# Load dataset kain dari JSON
 kain_path = os.path.join(os.path.dirname(__file__), 'data', 'kain.json')
 with open(kain_path, 'r', encoding='utf-8') as f:
     DATASET = json.load(f)
 
-# Load daftar produk
 jenispakaian_path = os.path.join(os.path.dirname(__file__), 'data', 'jenispakaian.json')
 try:
     with open(jenispakaian_path, 'r', encoding='utf-8') as f:
@@ -52,7 +50,7 @@ def run():
                 if jenis_kain not in rekom_kain:
                     st.warning(f"{jenis_kain} tidak direkomendasikan untuk {produk_target}")
 
-            # Fokus ukuran
+            
             ukuran_tersedia = list(DATASET[jenis_kain]["meter_per_ukuran"].keys())
             st.subheader("Fokus Ukuran Produksi")
             cols = st.columns(len(ukuran_tersedia))
@@ -61,7 +59,7 @@ def run():
                 if cols[i].checkbox(ukuran.upper(), value=True):
                     ukuran_fokus.append(ukuran)
 
-            # Persentase produksi
+
             st.subheader("Persentase Produksi (%)")
             cols_persen = st.columns(len(ukuran_tersedia))
             persentase = {}
@@ -101,7 +99,7 @@ def run():
                         optimasi_sisa,
                         persentase
                     )
-                    # Siapkan DataFrame hasil
+                    
                     rows = []
                     for ukuran, jumlah in hasil.items():
                         meter = DATASET[jenis_kain]["meter_per_ukuran"][ukuran]
